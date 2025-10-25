@@ -39,7 +39,7 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-6">
           <h1 className="text-2xl md:text-3xl font-heading font-bold tracking-tight">
-            PORTFOLIO / Sytyugina Yana <span className="text-accent">AI - creator</span>
+            PORTFOLIO / Sytyugina Yana AI - creator
           </h1>
         </div>
       </header>
