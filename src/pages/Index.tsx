@@ -36,37 +36,48 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <h1 className="text-2xl md:text-3xl font-heading font-bold tracking-tight">
-              PORTFOLIO / Sytyugina Yana AI - creator
-            </h1>
-            <div className="flex gap-4 items-center">
-              <a 
-                href="https://www.instagram.com/yasytyugina/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-muted-foreground transition-colors"
-                aria-label="Instagram"
-              >
-                <Icon name="Instagram" size={24} />
-              </a>
-              <a 
-                href="https://t.me/yanasytyugina" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-muted-foreground transition-colors"
-                aria-label="Telegram"
-              >
-                <Icon name="Send" size={24} />
-              </a>
+      <header className="relative z-50">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/files/0a1ed08e-9c9d-4ab0-a96e-74fdfa24cf27.jpg" 
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black"></div>
+        </div>
+        
+        <div className="relative z-10 border-b border-border/30">
+          <div className="container mx-auto px-4 py-6">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <h1 className="text-2xl md:text-3xl font-heading font-bold tracking-tight">
+                PORTFOLIO / Sytyugina Yana AI - creator
+              </h1>
+              <div className="flex gap-4 items-center">
+                <a 
+                  href="https://www.instagram.com/yasytyugina/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-muted-foreground transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Icon name="Instagram" size={24} />
+                </a>
+                <a 
+                  href="https://t.me/yanasytyugina" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-muted-foreground transition-colors"
+                  aria-label="Telegram"
+                >
+                  <Icon name="Send" size={24} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
-      <nav className="fixed top-20 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
+      <nav className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-wrap gap-2 md:gap-4">
             {categories.map((category) => (
@@ -86,7 +97,7 @@ const Index = () => {
         </div>
       </nav>
 
-      <main className="pt-40 pb-20">
+      <main className="pb-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {filteredItems.map((item, index) => (
