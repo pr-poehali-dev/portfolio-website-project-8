@@ -20,7 +20,7 @@ const portfolioItems = [
   { id: 6, category: 'AI + REAL PRODUCT', title: 'Product Visualization', image: '/placeholder.svg', type: 'image' },
   { id: 7, category: 'VIDEO', title: 'Documentary Cut', image: '/placeholder.svg', type: 'video' },
   { id: 8, category: 'PHOTO', title: 'Studio Session', image: '/placeholder.svg', type: 'image' },
-  { id: 9, category: 'FACES', title: 'Character Study', image: '/placeholder.svg', type: 'image' },
+  { id: 9, category: 'FACES', title: 'Character Study', image: 'https://cdn.poehali.dev/files/ba388569-c9db-43e4-ac0f-677c2b181026.png', type: 'image' },
   { id: 10, category: 'CINEMATIC SHOTS', title: 'Wide Angle Scene', image: '/placeholder.svg', type: 'image' },
   { id: 11, category: 'AI + REAL PRODUCT', title: 'Tech Integration', image: '/placeholder.svg', type: 'image' },
   { id: 12, category: 'VIDEO', title: 'Commercial Spot', image: '/placeholder.svg', type: 'video' },
