@@ -38,9 +38,31 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-6">
-          <h1 className="text-2xl md:text-3xl font-heading font-bold tracking-tight">
-            PORTFOLIO / Sytyugina Yana AI - creator
-          </h1>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <h1 className="text-2xl md:text-3xl font-heading font-bold tracking-tight">
+              PORTFOLIO / Sytyugina Yana AI - creator
+            </h1>
+            <div className="flex gap-4 items-center">
+              <a 
+                href="https://www.instagram.com/yasytyugina/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-muted-foreground transition-colors"
+                aria-label="Instagram"
+              >
+                <Icon name="Instagram" size={24} />
+              </a>
+              <a 
+                href="https://t.me/yanasytyugina" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-muted-foreground transition-colors"
+                aria-label="Telegram"
+              >
+                <Icon name="Send" size={24} />
+              </a>
+            </div>
+          </div>
         </div>
       </header>
 
