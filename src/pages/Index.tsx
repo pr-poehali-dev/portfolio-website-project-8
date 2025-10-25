@@ -135,11 +135,26 @@ const Index = () => {
       <footer className="border-t border-border mt-20">
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© 2024 Portfolio. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-foreground transition-colors">Instagram</a>
-              <a href="#" className="hover:text-foreground transition-colors">Behance</a>
-              <a href="#" className="hover:text-foreground transition-colors">Email</a>
+            <p>© 2024 Sytyugina Yana. All rights reserved.</p>
+            <div className="flex gap-6 items-center">
+              <a 
+                href="https://www.instagram.com/yasytyugina/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-foreground transition-colors flex items-center gap-2"
+              >
+                <Icon name="Instagram" size={20} />
+                <span>Instagram</span>
+              </a>
+              <a 
+                href="https://t.me/yanasytyugina" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-foreground transition-colors flex items-center gap-2"
+              >
+                <Icon name="Send" size={20} />
+                <span>Telegram</span>
+              </a>
             </div>
           </div>
         </div>
